@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Car 1950</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="top-color-block"></div>
+  <div class="container">
+
+    <header class="header">
+      <img src="image/Logo.png" alt="Vintago Logo" class="logo">
+      <nav>
+        <a href="#" class="nav-link">Home</a>
+        <a href="index-a.html" class="nav-link">Classic Models</a>
+        <a href="#" class="nav-link">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Left Section -->
+    <div class="text-section">
+      <div class="title">CLASSIC</div>
+      <div class="year">1970</div>
+    </div>
+
+    <div class="image">
+        <img src="image/car3_1.png" alt="Classic-Car-3">
+    </div>
+    
+    <div class="background-overlay"></div>
+    <div class="background-overlay-2"></div>
+
+    
+
+   <!-- Bottom Dots -->
+   <div class="dots">
+    <div class="dot red" onclick="goToPageA()"></div>
+    <div class="dot gray" onclick="goToPageB()"></div>
+    <div class="dot yellow" onclick="goToPageC()"></div>
+    <div class="dot green" onclick="goToPageD()"></div>
+  </div>
+
+  <script>
+    function goToPageA() {
+      window.location.href = "index-a.html";  // 將網址設為頁面 B 的路徑
+    }
+  </script>
+
+  <script>
+    function goToPageB() {
+      window.location.href = "index-b.html";  // 將網址設為頁面 B 的路徑
+    }
+  </script>
+
+  <script>
+    function goToPageC() {
+      window.location.href = "index-c.html";  // 將網址設為頁面 C 的路徑
+    }
+  </script>
+
+  <script>
+    function goToPageD() {
+      window.location.href = "index-d.html";  // 將網址設為頁面 C 的路徑
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const backgroundOverlay = document.querySelector(".background-overlay");
+      if (backgroundOverlay) {
+        backgroundOverlay.style.backgroundColor = "#eacf60";
+      }
+    });
+  </script>
+
+</body>
+</html>
